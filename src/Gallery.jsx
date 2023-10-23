@@ -12,6 +12,11 @@ const Gallery = () => {
       imageUrl: '/src/imgs/hornedbeast2.jpg',
       description: 'Beastiarus Maximus, a formidable being, boasts a remarkable array of horns, evoking both elegance and strength. Its imposing appearance and captivating allure make it a majestic figure, signifying the grandeur of the natural world.',
     },
+    {
+      title: 'Shadowhorn, the Cursed Equine',
+      imageUrl: '/src/imgs/hornedbeast3.jpg',
+      description: 'Shadowhorn is a mythical, eerie creature, a cursed unicorn with an aura of darkness and foreboding. Its ebony coat shimmers with an unsettling spectral glow, and its single horn is twisted and malevolent. A symbol of enchantment gone awry, it embodies the eerie beauty of the supernatural.'
+    }
   ];
 
   return (
