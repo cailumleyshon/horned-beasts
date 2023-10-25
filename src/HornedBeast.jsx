@@ -1,11 +1,20 @@
+import { useState } from 'react';
 const HornedBeast = (props) => {
   const { title, imageUrl, description } = props;
+  
+  const [favourite, setFavourite] = useState(0);
 
+  const handleClickImage = () => {
+    setFavourite(favourite + 1);
+  };
+  
+  
   return (
     <div className="horned-beast">
       <h2>{title}</h2>
-      <img src={imageUrl} alt={title} title={title} />
-      <p>{description}</p>
+      <img src={imageUrl} alt={title} title={title} onClick={handleClickImage} />
+      <p className="horned-beast-description">{description}</p>
+      <p>Favourites: {favourite}⭐️ </p>
     </div>
   );
 };

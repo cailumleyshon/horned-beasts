@@ -13,6 +13,26 @@ header {
   text-decoration: underline;
 }
 
+.gallery {
+  width: 80vw;
+  white-space: nowrap; 
+  overflow-x: scroll; 
+  overflow-y: hidden;  
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.horned-beast {
+    width: 300px;  
+    padding: 10px; 
+    margin: 10px; 
+}
+
+.horned-beast-description {
+  word-wrap: break-word;
+  overflow-wrap: normal;
+}
+
 h2 {
   color: rgb(134, 22, 22);
   text-decoration: underline;
@@ -34,14 +54,9 @@ footer p {
   color: crimson;
 }
 
-.gallery {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
 img {
   width: 200px;
   height: 200px;
   display: flex;
+  border-radius: 100%;
 }
