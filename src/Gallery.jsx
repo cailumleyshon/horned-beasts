@@ -1,11 +1,13 @@
-import {useState} from 'react'
 import HornedBeast from './HornedBeast'
 
-const Gallery = ({ data }) => {
+const Gallery = ({ data, selectedHorns }) => {
+  const filteredData = selectedHorns
+    ? data.filter((beast) => beast.horns === selectedHorns)
+    : data;
 
   return (
     <div className="gallery">
-      {data.map((beast) => (
+      {filteredData.map((beast) => (
         <HornedBeast
           key={beast._id}
           id={beast._id}
