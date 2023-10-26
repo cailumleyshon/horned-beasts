@@ -20,6 +20,8 @@ header {
   overflow-y: hidden;  
   display: flex;
   padding-bottom: 30px;
+  margin-top: 4rem;
+  border: solid 1px crimson;
 }
 
 .horned-beast {
@@ -38,11 +40,13 @@ h2 {
   text-decoration: underline;
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 p {
   color: rgb(175, 167, 167);
   text-align: center;
+  margin-top: 1rem
 }
 
 footer {
@@ -59,4 +63,19 @@ img {
   height: 200px;
   display: flex;
   border-radius: 100%;
+}
+
+label[for="filterByHorns"] {
+  margin-left: 5rem;
+  color: rgb(175, 167, 167);
+}
+#filterByHorns {
+  color: white;
+  margin-left: 1rem;
+  border-radius: 10px;
+  background-color: crimson;
+}
+
+form {
+  margin-top: 2rem;
 }
